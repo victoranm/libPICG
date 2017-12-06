@@ -32,9 +32,10 @@ def nchannels (n): # recebe a imagem e retorna o numero de canais
     return nc
 # end
 
-# questao 4
+# questao 4 .. OK
 
 # begin
 def size (n): # recebe uma imagem e retorna um array altura x largura
-    return None
+    wh = (n.shape[0], n.shape[1])
+    return wh
 # end
