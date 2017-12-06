@@ -5,7 +5,7 @@ import numpy as np
 # questao 1
 # criar a biblioteca .. OK
 
-# questao 2
+# questao 2 .. OK
 
 # begin
 def imgread (n): # recebe o nome da imagem, e retorna a imagem
@@ -15,13 +15,19 @@ def imgread (n): # recebe o nome da imagem, e retorna a imagem
     return img
 # end
 
-# questao 2.a
+# questao 2.a, 2.b, 2.c .. OK
 
 # begin
-def imgread2a (n):
+def imgread2x (n):
     imgplot = mp.imshow(imgread (n))
     mp.show()
     return None
 # end
 
-# questa 2.b
+# questao 3
+
+# begin
+def nchannels (n): # recebe a imagem e retorna o numero de canais
+    nc = n
+    return nc
+# end
