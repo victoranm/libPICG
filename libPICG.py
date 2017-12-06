@@ -24,10 +24,17 @@ def imgread2x (n):
     return None
 # end
 
-# questao 3
+# questao 3 .. OK
 
 # begin
 def nchannels (n): # recebe a imagem e retorna o numero de canais
-    nc = n
+    nc = len(n.shape)
     return nc
+# end
+
+# questao 4
+
+# begin
+def size (n): # recebe uma imagem e retorna um array altura x largura
+    return None
 # end
