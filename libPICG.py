@@ -6,36 +6,35 @@ import numpy as np
 # criar a biblioteca .. OK
 
 # questao 2 .. OK
-
 # begin
-def imgread (n): # recebe o nome da imagem, e retorna a imagem
-    img = mp.imread(n)
-    # coverte para uint8 caso seja float32
-    if img.dtype == 'float32' : img = (img * 255).astype(np.uint8)
-    return img
+def imread (img): # recebe o nome da imagem, e retorna a imagem
+    if mp.imread(img).dtype == 'float32' :
+        return ((mp.imread(img) * 255).astype(np.uint8))
+    else : return (mp.imread(img))
 # end
 
 # questao 2.a, 2.b, 2.c .. OK
-
 # begin
-def imgread2x (n):
-    imgplot = mp.imshow(imgread (n))
+def imread2x (img): #recebe uma imagem e a exibe
+    imgplot = mp.imshow(imread(img))
     mp.show()
     return None
 # end
 
 # questao 3 .. OK
-
 # begin
-def nchannels (n): # recebe a imagem e retorna o numero de canais
-    nc = len(n.shape)
-    return nc
+def nchannels (img): # recebe a imagem e retorna o numero de canais
+    return (len(imgread(img).shape))
 # end
 
 # questao 4 .. OK
-
 # begin
-def size (n): # recebe uma imagem e retorna um array altura x largura
-    wh = (n.shape[0], n.shape[1])
-    return wh
+def size (img): # recebe uma imagem e retorna um array largura x altura
+    return (imread(img).shape[0], imread(img).shape[1])
+# end
+
+# questao 5 .. NOT OK
+# begin
+def rgb2gray (img) : # recebe uma imagem e retorna a imagem convertida em gs
+    return None
 # end
