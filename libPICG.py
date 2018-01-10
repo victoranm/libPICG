@@ -1,3 +1,5 @@
+# Alunos: Victor Carity, Victor Nunes
+
 import os
 import matplotlib.pyplot as mp
 import numpy as np
